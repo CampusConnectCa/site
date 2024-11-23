@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState } from "react";
+import '../styles.css'
 
 
 export default function LandingPage () {
@@ -21,9 +22,16 @@ export default function LandingPage () {
 
     return (
         <div className="landing-page-wrapper">
-           <h1>Campus Connect Landing Page</h1>
-           <button onClick={navigateStudent}>Student Page</button>
-           <button onClick={navigateLandlord}>Landlord Page</button>
+            <div className="nav-bar">
+                <div className="nav-logo-wrapper"></div>
+                <div className="nav-links-wrapper">
+                    <button onClick={navigateHome}>About</button>
+                    <button onClick={navigateStudent}>Student Page</button>
+                    <button onClick={navigateLandlord}>Landlord Page</button>
+                </div>
+            </div>
+            <h1>Student looking for housing? Landlord looking for vetted tennants? Either way, we bring you peace of mind.</h1>
+            
         </div>
     )
 }

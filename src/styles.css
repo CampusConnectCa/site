@@ -9,3 +9,7 @@
     --cc-black: #000000;
     --jwe-black-light: #555555;
 }
+
+body {
+    font-family: 'Silka', sans-serif;
+}
