@@ -4,11 +4,12 @@ import { HashLink as Link } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
-import { library, dom } from '@fortawesome/fontawesome-svg-core';
 import '../styles.css'
 
 // images imported:
 import logo from '../assets/logos/Asset 20.svg'
+import image1 from '../assets/images/cc12.JPEG'
+import image2 from '../assets/images/cc2.JPEG'
 
 
 export default function LandingPage () {
@@ -19,7 +20,7 @@ export default function LandingPage () {
     const navigateHome = () => navigate('/', {replace: false});
 
     // mailto string for email questions button
-    const emailString = "mailto:jarenworme@gmail.com?subject=JWElectrical%20Query?body=Hi%20Jaren,%0D%0A%0D%0AI%20would%20like%20to%20ask%20a%20question%20about%20your%20services!%0D%0A%0D%0A"
+    // const emailString = "mailto:jarenworme@gmail.com?subject=JWElectrical%20Query?body=Hi%20Jaren,%0D%0A%0D%0AI%20would%20like%20to%20ask%20a%20question%20about%20your%20services!%0D%0A%0D%0A"
 
     // function to navigate to the student page
     const navigateStudent = () => navigate('/student', { replace: false });
@@ -58,7 +59,7 @@ export default function LandingPage () {
                     <button className="lp-block1-cta-2">find vetted tenants</button>
                 </div>
                 <Link className="nav-link" smooth to="#lpblock2">
-                    <FontAwesomeIcon icon={faChevronDown} className='lp-chevron-down-icon' size='2x' />
+                    <FontAwesomeIcon icon={faChevronDown} className={`lp-chevron-down-icon' ${isScrolled ? 'lp-chevron-down-icon-scrolled' : ''}`} size='2x' />
                 </Link>
             </div>
             <div id="lpblock2" className="lp-block2-wrapper">
@@ -66,17 +67,34 @@ export default function LandingPage () {
                 <button className="lp-block2-button">review cards</button>
             </div>
             <div className="lp-block3-wrapper">
-                <h1 className="lp-block3-text">student info</h1>
-                <button className="lp-block2-button">Learn more here</button>
+                <div className="lp-block3-content-wrapper">
+                    <h2 className="lp-block3-title">Ditch the housing drama.</h2>
+                    <h3 className="lp-block3-text"> Campus Connect hooks you up with off-campus spots that match your vibe—budget, location, lifestyle, all covered. We make sure you're set, so you can focus on crushing college life without the stress.</h3>
+                    <button className="lp-block3-button">find your home</button>
+                </div>
+                <div className="lp-block3-image-wrapper">
+                    <img src={image1} alt="student image" className="lp-block3-image" />
+                </div>
             </div>
             <div className="lp-block4-wrapper">
-                <h1 className="lp-block4-text">Landlord info</h1>
+                <div className="lp-block4-image-wrapper">
+                    <img src={image2} alt="student image" className="lp-block4-image" />
+                </div>
+                <div className="lp-block4-content-wrapper">
+                    <h2 className="lp-block4-title">Lease your property with confidence.</h2>
+                    <h3 className="lp-block4-text">Campus Connect delivers fully vetted tenants tailored to your preferences, saves you money by minimizing risks, and handles maintenance requests. Enjoy a low-touch landlord experience where we take care of the hassles, and you collect the rent.</h3>
+                    <button className="lp-block4-button">find vetted tenants</button>
+                </div>
+                
             </div>
             <div className="lp-block5-wrapper">
-                <h1 className="lp-block4-text">Our platform is currently in development. Stay tuned.</h1>
+                <h1 className="lp-block4-text">Our new platform is currently in development. Stay tuned.</h1>
             </div>
             <div className="footer">
-                <FontAwesomeIcon icon={faInstagram} className='ig-icon' size='xl' onClick={navigateHome}/>
+                <h3 className="footer-text">Contact Us!</h3>
+                <a href="https://www.instagram.com/campusconnectca/" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faInstagram} className='ig-icon' size='xl' onClick={navigateHome}/>
+                </a>
                 <p className="copyright-text">&copy; 2024 Campus Connect MGT</p>
             </div>
         </div>

@@ -1,5 +1,4 @@
 :root{
-    
     --cc-primary: #E52926;
     --cc-primary-light: #EE7573;
     --cc-primary-dark: #970200;
@@ -7,16 +6,13 @@
     --cc-secondary: #F8F8F0;
     --cc-white: #FFFFFF;
     --cc-black: #000000;
-    --jwe-black-light: #555555;
+    --cc-secondary-translucent: rgba(248, 248, 240, 0.85);
 }
 
-body {
+* {
     font-family: 'Silka', sans-serif;
 }
 
-button {
-    font-family: 'Silka', sans-serif;
-}
 
 /***************************************************************************************************************************************/
 /* code for the navigation bar shared by all pages */
@@ -68,16 +64,16 @@ button {
 /***************************************************************************************************************************************/
 
 .lp-block1-wrapper, .lp-block2-wrapper, .lp-block3-wrapper, .lp-block4-wrapper, .lp-block5-wrapper {
-    height: 110vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
 }
 
 .lp-block1-wrapper {
+    height: 110vh;
     background-color: var(--cc-primary);
+    flex-direction: column;
+    justify-content: center;
 }
 
 .lp-block1-text-wrapper {
@@ -130,30 +126,148 @@ button {
     }
   }
 
-.lp-chevron-down-icon {
-    animation: lp-chevron-shake 4s infinite;
+  .nav-link {
+    text-decoration: none;
     color: var(--cc-secondary);
     margin: 40px 0 32px 0;
+    animation: lp-chevron-shake 4s infinite;
+}
+
+.lp-chevron-down-icon-scrolled {
+    color: transparent;
 }
 
 .lp-chevron-down-icon:hover {
     cursor: pointer;
     transform: scale(1.3);
-    color: var(--cc-black);
+    color: var(--cc-primary-dark);
 }
 
 .lp-block2-wrapper {
+    height: 110vh;
     background-color: var(--cc-primary);
+    flex-direction: column;
+    justify-content: center;
 }
 
-.lp-block3-wrapper {
+.lp-block3-wrapper, .lp-block4-wrapper {
+    height: 90vh;
     background-color: var(--cc-secondary);
+    flex-direction: row;
+    width: 76%;
+    padding: 0 12%;
+    justify-content: space-between;
 }
 
-.lp-block4-wrapper {
+.lp-block3-content-wrapper, .lp-block4-content-wrapper {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+
+.lp-block3-content-wrapper {
+    height: 70%;
+}
+
+.lp-block4-content-wrapper {
+    height: 85%;
+}
+
+.lp-block3-title {
+    font-size: 300%;
+    text-align: left;
+    margin: 0;
+}
+
+.lp-block3-text {
+    font-size: x-large;
+    text-align: left;
+    margin: 0;
+}
+
+.lp-block4-title {
+    font-size: 300%;
+    text-align: right;
+    margin: 0;
+}
+
+.lp-block4-text {
+    font-size: x-large;
+    text-align: right;
+    margin: 0;
+}
+
+.lp-block3-button, .lp-block4-button {
+    height: 48px;
+    width: 40%;
+    color: var(--cc-primary);
+    font-size: large;
+    background-color: transparent;
+    border: 1px solid var(--cc-primary);
+    transition: background-color 1.5s ease;
+}
+
+.lp-block3-button:hover, .lp-block4-button:hover {
+    cursor: pointer;
     background-color: var(--cc-primary);
+    color: var(--cc-secondary);
+    border: 1px solid var(--cc-primary);
+}
+
+.lp-block3-image-wrapper, .lp-block4-image-wrapper {
+    width: 50%;
+    height: 50%;
+}
+
+.lp-block3-image, .lp-block4-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .lp-block5-wrapper {
     background-color: var(--cc-secondary);
+    height: 25vh;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+/***************************************************************************************************************************************/
+/* code for the footer shared by all pages */
+/***************************************************************************************************************************************/
+
+.footer {
+    background-color: var(--cc-primary);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+    align-items: flex-start;
+    padding: 0 5vw;
+}
+
+.footer-text {
+    color: var(--cc-secondary);
+    font-size: larger;
+}
+
+.ig-icon {
+    color: var(--cc-secondary);
+}
+
+.ig-icon:hover {
+    color: var(--cc-primary-light);
+}
+
+.copyright-text {
+    color: var(--cc-secondary);
 }
