@@ -150,6 +150,42 @@
     justify-content: center;
 }
 
+.review {
+    background-color: var(--cc-secondary);
+    border-radius: 8px;
+    height: 22vh;
+    width: 70%;
+    box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.25);
+    display: flex;
+    align-items: center;
+    margin: 2vh;
+    padding: 4px 16px;
+}
+
+.lp-review-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.lp-review-title {
+    font-size: large;
+    margin: 0;
+}
+
+.lp-review-text {
+    font-size: small;
+    text-align: left;
+    margin: 0;
+}
+
+.lp-headshot {
+    height: 60%;
+    border-radius: 50%;
+    margin-right: 1%;
+}
+
 .lp-block3-wrapper, .lp-block4-wrapper {
     height: 90vh;
     background-color: var(--cc-secondary);
@@ -177,34 +213,35 @@
 }
 
 .lp-block3-title {
-    font-size: 300%;
+    font-size: 3vw;
     text-align: left;
     margin: 0;
 }
 
 .lp-block3-text {
-    font-size: x-large;
+    font-size: 1.6vw;
     text-align: left;
     margin: 0;
 }
 
 .lp-block4-title {
-    font-size: 300%;
+    font-size: 3vw;
     text-align: right;
     margin: 0;
 }
 
 .lp-block4-text {
-    font-size: x-large;
+    font-size: 1.6vw;
     text-align: right;
     margin: 0;
 }
 
 .lp-block3-button, .lp-block4-button {
     height: 48px;
-    width: 40%;
+    padding: 0 4%;
+    min-width: 48%;
     color: var(--cc-primary);
-    font-size: large;
+    font-size: 1.5vw;
     background-color: transparent;
     border: 1px solid var(--cc-primary);
     transition: background-color 1.5s ease;
@@ -235,15 +272,10 @@
 }
 
 
-
-
-
-
-
-
 /***************************************************************************************************************************************/
 /* code for the footer shared by all pages */
 /***************************************************************************************************************************************/
+
 
 .footer {
     background-color: var(--cc-primary);
@@ -252,7 +284,7 @@
     justify-content: center;
     height: 20vh;
     align-items: flex-start;
-    padding: 0 5vw;
+    padding: 20px 5vw;
 }
 
 .footer-text {

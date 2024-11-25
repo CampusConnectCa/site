@@ -10,6 +10,9 @@ import '../styles.css'
 import logo from '../assets/logos/Asset 20.svg'
 import image1 from '../assets/images/cc12.JPEG'
 import image2 from '../assets/images/cc2.JPEG'
+import headshot1 from '../assets/images/headshot1.jpg'
+import headshot2 from '../assets/images/headshot2.jpg'
+import headshot3 from '../assets/images/headshot3.jpg'
 
 
 export default function LandingPage () {
@@ -63,8 +66,27 @@ export default function LandingPage () {
                 </Link>
             </div>
             <div id="lpblock2" className="lp-block2-wrapper">
-                <h1 className="lp-block2-text">Reviews will go here</h1>
-                <button className="lp-block2-button">review cards</button>
+                <div className="review">
+                    <img src={headshot2} alt="headshot" className="lp-headshot" />
+                    <div className="lp-review-content">
+                        <h2 className="lp-review-title">Pira Ebrahimi, Keller Williams</h2>
+                        <p className="lp-review-text">Working with the Campus Connect team was exceptional. They found and screened two ideal tenants and guided me through the entire process seamlessly.</p>
+                    </div>
+                </div>
+                <div className="review">
+                    <img src={headshot1} alt="headshot" className="lp-headshot" />
+                    <div className="lp-review-content">
+                        <h2 className="lp-review-title">Karima, Australian Exchange Student</h2>
+                        <p className="lp-review-text">Campus Connect really helped find me a new tenant for my place at the Quad. Not only did I have a lot of people asking about the place, but there was a wide range which fit the description od the type of person I wanted. The team really gelped me feel at ease once mt move out date came about. If it wasn't for them I would have been on struggle street trying to find someone to take my lease!</p>
+                    </div>
+                </div>
+                <div className="review">
+                    <img src={headshot3} alt="headshot" className="lp-headshot" />
+                    <div className="lp-review-content">
+                        <h2 className="lp-review-title">Samantha, Student Athlete</h2>
+                        <p className="lp-review-text">Heading into my second year, I found myself scrambling to secure housing at the last minute. I was unsure how to navigate the process, and finding legitamate listings that met my criteria felt impossible. Campus Connect not only helped me fine a comfortable home, but they also made this daunting process less stressful. I felt less alone in tackling this challenging task. The team at Campus Connect was very professional, relaiable and I would highly recommend their service to any university student searching for housing accommodations.</p>
+                    </div>
+                </div>
             </div>
             <div className="lp-block3-wrapper">
                 <div className="lp-block3-content-wrapper">
