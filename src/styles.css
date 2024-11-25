@@ -4,7 +4,7 @@
     --cc-primary-dark: #970200;
     --cc-primary-disabled: #EED1D1;
     --cc-secondary: #F8F8F0;
-    --cc-white: #FFFFFF;
+    --cc-grey-text: #575757;
     --cc-black: #000000;
     --cc-secondary-translucent: rgba(248, 248, 240, 0.85);
 }
@@ -126,21 +126,15 @@
     }
   }
 
-  .nav-link {
+.nav-link {
     text-decoration: none;
     color: var(--cc-secondary);
     margin: 40px 0 32px 0;
     animation: lp-chevron-shake 4s infinite;
 }
 
-.lp-chevron-down-icon-scrolled {
+.chevron-down-icon-scrolled {
     color: transparent;
-}
-
-.lp-chevron-down-icon:hover {
-    cursor: pointer;
-    transform: scale(1.3);
-    color: var(--cc-primary-dark);
 }
 
 .lp-block2-wrapper {
@@ -201,7 +195,6 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 70%;
 }
 
 .lp-block3-content-wrapper {
@@ -269,6 +262,193 @@
     background-color: var(--cc-secondary);
     height: 25vh;
     justify-content: center;
+}
+
+
+/***************************************************************************************************************************************/
+/* code for the student page */
+/***************************************************************************************************************************************/
+
+
+.s-block1-wrapper, .s-block2-wrapper, .s-block3-wrapper, .s-block4-wrapper, .s-block5-wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.s-block1-wrapper {
+    height: 100vh;
+    background-color: var(--cc-primary);
+    background-image: url(/src/assets/images/cc1.JPEG);
+    background-position: center;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s-block1-text-wrapper {
+    width: 70%;
+}
+
+.s-block1-text {
+    font-size: 320%;
+    color: var(--cc-secondary);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.s-block2-wrapper, .s-block5-wrapper {
+    height: 100vh;
+    background-color: var(--cc-secondary);
+    flex-direction: row;
+    width: 76%;
+    padding: 0 12%;
+    justify-content: space-between;
+}
+
+.s-block2-content-wrapper, .s-block5-content-wrapper {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.s-block2-content-wrapper {
+    height: 50%;
+}
+
+.s-block2-title, .s-block2-text {
+    color: var(--cc-primary);
+}
+
+.s-block2-title, .s-block5-title {
+    font-size: 3vw;
+    text-align: left;
+    margin: 0;
+}
+
+.s-block2-text {
+    font-size: 1.6vw;
+    text-align: left;
+    margin: 0;
+}
+
+.s-block2-image-wrapper, .s-block5-image-wrapper {
+    width: 50%;
+    height: 50%;
+}
+
+.s-block2-image, .s-block5-image {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.s-block3-wrapper {
+    background-color: var(--cc-primary);
+    height: 40vh;
+    flex-direction: column;
+    justify-content: center;
+    width: 76%;
+    padding: 0 12%;
+}
+
+.s-block3-title, .s-block3-text {
+    color: var(--cc-secondary);
+    margin: 0;
+}
+
+.s-block3-title {
+    font-size: 2.4vw;
+    margin-bottom: 16px;
+}
+
+.s-block3-text {
+    font-size: 1.6vw;
+    margin: 0;
+}
+
+.s-block4-wrapper {
+    flex-direction: row;
+    justify-content: center;
+    background-color: var(--cc-primary);
+    height: 55vh;
+    padding-bottom: 10vh;
+}
+
+.s-block4-card {
+    width: 19vw;
+    height: 44vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    background-color: var(--cc-secondary);
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+    padding: 1.5vw;
+    margin: 1vw;
+}
+
+.s-block4-card-title-wrapper {
+    height: 14vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.s-block4-card-title {
+    font-size: 2.2vw;
+    text-align: left;
+    margin: 0;
+}
+
+.s-block4-card-hr {
+    width: 100%;
+    height: 2px;
+    background-color: var(--cc-black);
+    border: none;
+}
+
+.s-block4-card-text {
+    margin: 0;
+    font-size: 1.4vw;
+    text-align: left;
+}
+
+.s-block5-content-wrapper {
+    height: 65%;
+}
+
+.s-block5-title, .s-block5-text {
+    color: var(--cc-black);
+}
+
+.s-block5-card {
+    display: flex;
+}
+
+.s-check-icon {
+    color: var(--cc-primary);
+}
+
+.s-block5-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 0 8px;
+}
+
+.s-block5-subtitle {
+    margin: 0;
+    font-size: 1.4vw;
+    text-align: left;
+}
+
+.s-block5-text {
+    margin: 0;
+    text-align: left;
+    font-size: 1.2vw;
+    color: var(--cc-grey-text);
 }
 
 

@@ -1,7 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
+import { HashLink as Link } from 'react-router-hash-link';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faInstagram } from '@fortawesome/free-brands-svg-icons';
+import { faChevronDown, faCircleCheck } from '@fortawesome/free-solid-svg-icons';
 
 import logo from '../assets/logos/Asset 20.svg'
+import image1 from '../assets/images/cc7.JPEG'
+import image2 from '../assets/images/cc6.JPEG'
 
 
 export default function Student () {
@@ -39,8 +45,113 @@ export default function Student () {
                     <button className={`nav-button ${isScrolled ? 'nav-button-scrolled' : ''}`} onClick={navigateLandlord}>find vetted tenants</button>
                 </div>
             </div>
-           <h1>Student Page</h1>
-           <button onClick={navigateHome}>Landing Page</button>
+           <div className="s-block1-wrapper">
+                <div className="s-block1-text-wrapper">
+                    <h1 className="s-block1-text">Welcome to Campus Connect - Your Personalized Housing Solution</h1>
+                </div>
+                <Link className="nav-link" smooth to="#sblock2">
+                    <FontAwesomeIcon icon={faChevronDown} className={`chevron-down-icon' ${isScrolled ? 'chevron-down-icon-scrolled' : ''}`} size='3x' />
+                </Link>
+            </div>
+            <div id="sblock2" className="s-block2-wrapper">
+                <div className="s-block2-content-wrapper">
+                    <h2 className="s-block2-title">Our Mission.</h2>
+                    <h3 className="s-block2-text">
+                        At Campus Connect, we believe finding your ideal off-campus home shouldn't be a hassle. That's 
+                        why we go beyond the basics to deliver peace of mind, so you can focus on what matters most—your 
+                        studies, friends, and college life..
+                    </h3>
+                </div>
+                <div className="s-block2-image-wrapper">
+                    <img src={image1} alt="students vibing" className="s-block2-image" />
+                </div>
+            </div>
+            <div className="s-block3-wrapper">
+                <div className="s-block3-content-wrapper">
+                    <h2 className="s-block3-title">Tailored to Your Unique Preferences</h2>
+                    <h3 className="s-block3-text">
+                    We understand that no two students are the same. That's why we work closely with you to match housing 
+                    options that meet your specific needs, including:
+                    </h3>
+                </div>
+            </div>
+            <div className="s-block4-wrapper">
+                <div className="s-block4-card">
+                    <div className="s-block4-card-title-wrapper">
+                        <h2 className="s-block4-card-title">Budget</h2>
+                    </div>
+                    <hr className="s-block4-card-hr" />
+                    <h3 className="s-block4-card-text">
+                        From affordable options to premium accommodations, we'll help you stay within your financial comfort zone.
+                    </h3>
+                </div>
+                <div className="s-block4-card">
+                    <div className="s-block4-card-title-wrapper">
+                        <h2 className="s-block4-card-title">Location</h2>
+                    </div>
+                    <hr className="s-block4-card-hr" />
+                    <h3 className="s-block4-card-text">
+                        Whether you prefer to be steps away from campus or closer to the city buzz, 
+                        we'll find a home in the perfect spot.
+                    </h3>
+                </div>
+                <div className="s-block4-card">
+                    <div className="s-block4-card-title-wrapper">
+                        <h2 className="s-block4-card-title">Lifestyle Preferences</h2>
+                    </div>
+                    <hr className="s-block4-card-hr" />
+                    <h3 className="s-block4-card-text">
+                        Looking for a quiet neighborhood or a social vibe? We consider behavior requirements to match you with a 
+                        home that aligns with your lifestyle.
+                    </h3>
+                </div>
+                <div className="s-block4-card">
+                    <div className="s-block4-card-title-wrapper">
+                        <h2 className="s-block4-card-title">Extra Requirements</h2>
+                    </div>
+                    <hr className="s-block4-card-hr" />
+                    <h3 className="s-block4-card-text">
+                        Need pet-friendly housing or specific amenities? We've got you covered.
+                    </h3>
+                </div>
+            </div>
+            <div className="s-block5-wrapper">
+                <div className="s-block5-content-wrapper">
+                    <h2 className="s-block5-title">Why Campus Connect?</h2>
+                    <div className="s-block5-card">
+                        <FontAwesomeIcon icon={faCircleCheck} className="s-check-icon" size='xl' />
+                        <div className="s-block5-text-wrapper">
+                            <h3 className="s-block5-subtitle">Stress-Free Process</h3>
+                            <h4 className="s-block5-text">Skip the headaches of endless searching—we simplify the process for you.</h4>
+                        </div>
+                    </div>
+                    <div className="s-block5-card">
+                        <FontAwesomeIcon icon={faCircleCheck} className="s-check-icon" size='xl' />
+                        <div className="s-block5-text-wrapper">
+                            <h3 className="s-block5-subtitle">Reliable Options</h3>
+                            <h4 className="s-block5-text">We carefully vet landlords and properties to ensure you experience minimal issues.</h4>
+                        </div>
+                    </div>
+                    <div className="s-block5-card">
+                        <FontAwesomeIcon icon={faCircleCheck} className="s-check-icon" size='xl' />
+                        <div className="s-block5-text-wrapper">
+                            <h3 className="s-block5-subtitle">Close to What Matters</h3>
+                            <h4 className="s-block5-text">Stay near your favorite restaurants, coffee shops, and hangout spots.</h4>
+                        </div>
+                    </div>
+                </div>
+                <div className="s-block5-image-wrapper">
+                    <img src={image2} alt="vibey room" className="s-block5-image" />
+                </div>
+            </div>
+            <div className="footer">
+                <h3 className="footer-text">Contact Us!</h3>
+                <a href="https://www.instagram.com/campusconnectca/" target="_blank" rel="noopener noreferrer">
+                    <FontAwesomeIcon icon={faInstagram} className='ig-icon' size='xl' onClick={navigateHome}/>
+                </a>
+                <p className="copyright-text">&copy; 2024 Campus Connect MGT</p>
+            </div>
         </div>
+        
     )
 }
