@@ -6,6 +6,7 @@
     --cc-secondary: #F8F8F0;
     --cc-grey-text: #575757;
     --cc-black: #000000;
+    --cc-green : #11d60b;
     --cc-secondary-translucent: rgba(248, 248, 240, 0.85);
 }
 
@@ -38,6 +39,13 @@
     height: 48px;
 }
 
+.nav-links-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 40vw;
+}
+
 .nav-button {
     background-color: transparent;
     border: none;
@@ -49,12 +57,31 @@
     color: var(--cc-secondary);
 }
 
-.nav-button:hover {
+.nav-a {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--cc-secondary);
+}
+
+.nav-a-text, .nav-a-bar {
+    font-size: larger;
+    color: var(--cc-secondary);
+    margin: 0 1vw;
+    transition: color 0.5s ease;
+}
+
+.nav-a-ig {
+    margin-right: 1vw;
+    transition: color 0.5s ease;
+}
+
+.nav-button:hover, .nav-a:hover, .nav-a:hover .nav-a-text {
     cursor: pointer;
     color: var(--cc-black);
 }
 
-.nav-button-scrolled:hover {
+.nav-scrolled-button:hover, .nav-scrolled-a:hover .nav-a-text, .nav-scrolled-a:hover .nav-a-ig {
     color: var(--cc-primary);
 }
 
@@ -270,7 +297,7 @@
 /***************************************************************************************************************************************/
 
 
-.s-block1-wrapper, .s-block2-wrapper, .s-block3-wrapper, .s-block4-wrapper, .s-block5-wrapper {
+.s-block1-wrapper, .s-block2-wrapper, .s-block3-wrapper, .s-block4-wrapper, .s-block5-wrapper, .s-block6-wrapper, .s-block7-wrapper {
     width: 100%;
     display: flex;
     align-items: center;
@@ -278,7 +305,6 @@
 
 .s-block1-wrapper {
     height: 100vh;
-    background-color: var(--cc-primary);
     background-image: url(/src/assets/images/cc1.JPEG);
     background-position: center;
     background-size: cover;
@@ -294,6 +320,34 @@
     font-size: 320%;
     color: var(--cc-secondary);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.s-block1-a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid var(--cc-primary);
+    transition: background-color 1.2s ease;
+    text-decoration: none;
+    color: var(--cc-secondary);
+    width: 20vw;
+    padding: 2vh 1vw;
+    margin-top: 8vh;
+}
+
+.s-block1-a-text {
+    margin: 0 12px;
+    font-size: 1.7vw;
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
+}
+
+.s-block1-a:hover {
+    cursor: pointer;
+    background-color: var(--cc-primary);
+}
+
+.s-block1-a:hover .s-block1-a-text {
+    text-shadow: none;
 }
 
 .s-block2-wrapper, .s-block5-wrapper {
@@ -385,21 +439,21 @@
     align-items: flex-start;
     justify-content: flex-start;
     background-color: var(--cc-secondary);
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.2);
     padding: 1.5vw;
     margin: 1vw;
 }
 
 .s-block4-card-title-wrapper {
     height: 14vh;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
 }
 
 .s-block4-card-title {
     font-size: 2.2vw;
-    text-align: left;
     margin: 0;
 }
 
@@ -412,8 +466,7 @@
 
 .s-block4-card-text {
     margin: 0;
-    font-size: 1.4vw;
-    text-align: left;
+    font-size: 1.35vw;
 }
 
 .s-block5-content-wrapper {
@@ -429,7 +482,7 @@
 }
 
 .s-check-icon {
-    color: var(--cc-primary);
+    color: var(--cc-green);
 }
 
 .s-block5-text-wrapper {
@@ -449,6 +502,44 @@
     text-align: left;
     font-size: 1.2vw;
     color: var(--cc-grey-text);
+}
+
+.s-block6-wrapper {
+    background-color: var(--cc-secondary);
+    flex-direction: column;
+    height: 70vh;
+}
+
+.s-block6-title {
+    font-size: 3vw;
+}
+
+.s-block6-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 76vw;
+}
+
+.s-block6-text {
+    width: 90%;
+}
+
+.s-block7-wrapper {
+    background-image: url(/src/assets/images/cc11.JPEG);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.s-block7-text {
+    font-size: 2vw;
+    color: var(--cc-secondary);
+    text-shadow: 4px 4px 4px rgba(0, 0, 0, 0.4);
+
 }
 
 

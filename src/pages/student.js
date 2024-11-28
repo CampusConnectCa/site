@@ -41,17 +41,22 @@ export default function Student () {
                     <img src={logo} alt="CC-Logo" className="nav-logo" onClick={navigateHome} />
                 </div>
                 <div className="nav-links-wrapper">
-                    <button className={`nav-button ${isScrolled ? 'nav-button-scrolled' : ''}`} onClick={navigateStudent}>find your home</button>
-                    <button className={`nav-button ${isScrolled ? 'nav-button-scrolled' : ''}`} onClick={navigateLandlord}>find vetted tenants</button>
+                    <a href="https://www.instagram.com/campusconnectca/" target="_blank" rel="noopener noreferrer" className={`nav-a ${isScrolled ? 'nav-scrolled-a' : ''}`}>
+                        <h3 className="nav-a-text">Contact Us</h3>
+                        <FontAwesomeIcon icon={faInstagram} size='xl' className="nav-a-ig"/>
+                    </a>
+                    <h2 className="nav-a-bar">|</h2>
+                    <button className={`nav-button ${isScrolled ? 'nav-scrolled-button' : ''}`} onClick={navigateLandlord}>Landlord? Click Here</button>
                 </div>
             </div>
            <div className="s-block1-wrapper">
                 <div className="s-block1-text-wrapper">
                     <h1 className="s-block1-text">Welcome to Campus Connect - Your Personalized Housing Solution</h1>
                 </div>
-                <Link className="nav-link" smooth to="#sblock2">
-                    <FontAwesomeIcon icon={faChevronDown} className={`chevron-down-icon' ${isScrolled ? 'chevron-down-icon-scrolled' : ''}`} size='3x' />
-                </Link>
+                <a href="https://www.instagram.com/campusconnectca/" target="_blank" rel="noopener noreferrer" className="s-block1-a">
+                    <h3 className="s-block1-a-text">Send us a dm</h3>
+                    <FontAwesomeIcon icon={faInstagram} size='xl' />
+                </a>
             </div>
             <div id="sblock2" className="s-block2-wrapper">
                 <div className="s-block2-content-wrapper">
@@ -144,10 +149,31 @@ export default function Student () {
                     <img src={image2} alt="vibey room" className="s-block5-image" />
                 </div>
             </div>
+            <div className="s-block6-wrapper">
+                <h2 className="s-block6-title">Our Goal</h2>
+                <div className="s-block6-text-wrapper">
+                    <h3 className="s-block6-text">
+                        At Campus Connect, we don't just find housing—we create solutions. Our mission is to provide a living 
+                        experience that empowers you to thrive academically, socially, and personally.
+                    </h3>
+                    <h3 className="s-block6-text">
+                        Let us find a space that feels like home, so you can focus on making the most of your college journey.
+                    </h3>
+                </div>
+            </div>
+            <div className="s-block7-wrapper">
+                <h2 className="s-block7-text">
+                    Your perfect home is just a step away—get started with Campus Connect today!
+                </h2>
+                <a href="https://www.instagram.com/campusconnectca/" target="_blank" rel="noopener noreferrer" className="s-block1-a">
+                    <h3 className="s-block1-a-text">Send us a dm</h3>
+                    <FontAwesomeIcon icon={faInstagram} size='xl' />
+                </a>
+            </div>
             <div className="footer">
                 <h3 className="footer-text">Contact Us!</h3>
                 <a href="https://www.instagram.com/campusconnectca/" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faInstagram} className='ig-icon' size='xl' onClick={navigateHome}/>
+                    <FontAwesomeIcon icon={faInstagram} className='ig-icon' size='xl' />
                 </a>
                 <p className="copyright-text">&copy; 2024 Campus Connect MGT</p>
             </div>

@@ -49,8 +49,8 @@ export default function LandingPage () {
                     <img src={logo} alt="CC-Logo" className="nav-logo" onClick={navigateHome} />
                 </div>
                 <div className="nav-links-wrapper">
-                    <button className={`nav-button ${isScrolled ? 'nav-button-scrolled' : ''}`} onClick={navigateStudent}>find your home</button>
-                    <button className={`nav-button ${isScrolled ? 'nav-button-scrolled' : ''}`} onClick={navigateLandlord}>find vetted tenants</button>
+                    <button className={`nav-button ${isScrolled ? 'nav-scrolled-button' : ''}`} onClick={navigateStudent}>find your home</button>
+                    <button className={`nav-button ${isScrolled ? 'nav-scrolled-button' : ''}`} onClick={navigateLandlord}>find vetted tenants</button>
                 </div>
             </div>
             <div className="lp-block1-wrapper">
@@ -137,7 +137,7 @@ export default function LandingPage () {
             <div className="footer">
                 <h3 className="footer-text">Contact Us!</h3>
                 <a href="https://www.instagram.com/campusconnectca/" target="_blank" rel="noopener noreferrer">
-                    <FontAwesomeIcon icon={faInstagram} className='ig-icon' size='xl' onClick={navigateHome}/>
+                    <FontAwesomeIcon icon={faInstagram} className='ig-icon' size='xl' />
                 </a>
                 <p className="copyright-text">&copy; 2024 Campus Connect MGT</p>
             </div>
