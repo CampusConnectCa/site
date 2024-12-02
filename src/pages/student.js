@@ -18,9 +18,6 @@ export default function Student () {
     const navigateHome = () => navigate('/', {replace: false});
 
     // function to navigate to the reviews page
-    const navigateStudent = () => navigate('/student', { replace: false });
-
-    // function to navigate to the reviews page
     const navigateLandlord = () => navigate('/landlord', { replace: false });
 
     const [isScrolled, setIsScrolled] = useState(false);
@@ -178,6 +175,5 @@ export default function Student () {
                 <p className="copyright-text">&copy; 2024 Campus Connect MGT</p>
             </div>
         </div>
-        
     )
 }
