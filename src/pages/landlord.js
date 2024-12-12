@@ -9,7 +9,6 @@ import image1 from '../assets/images/cc11.JPEG'
 import image2 from '../assets/images/cc10.JPEG'
 
 
-
 export default function Landlord () {
     // set up variable for navigation
     const navigate = useNavigate();
@@ -45,62 +44,63 @@ export default function Landlord () {
                     <button className={`nav-button ${isScrolled ? 'nav-scrolled-button' : ''}`} onClick={navigateStudent}>Student? Click Here</button>
                 </div>
             </div>
-            <div className="l-block1-wrapper">
-                <h1 className="l-block1-title">We make having students as tenants low stress and profitable.</h1>
-                <h3 className="l-block1-text">
+            <div className="l-intro">
+                <h1 className="l-intro-title">We make having students as tenants low stress and profitable.</h1>
+                <h3 className="l-intro-text">
                     As a landlord, filling vacancies isn't the challenge—finding the right tenants is. Campus Connect takes the guesswork out 
                     of leasing by delivering vetted, reliable tenants tailored to your preferences, while making your landlord experience as 
                     smooth and worry-free as possible.
                 </h3>
-                <a href="https://zld3ikl4smc.typeform.com/to/sTDJ5Vqd" target="_blank" rel="noopener noreferrer" className="l-block1-a">Contact Us</a>
+                <a href="https://zld3ikl4smc.typeform.com/to/sTDJ5Vqd" target="_blank" rel="noopener noreferrer" className="l-intro-a">Contact Us</a>
             </div>
-            <div className="l-block2-wrapper">
-                <h2 className="l-block2-title">What We Offer</h2>
-                <h3 className="l-block2-text">
+            <div className="s-spacer" />
+            <div className="text-block-secondary">
+                <h2 className="text-block-title">What We Offer</h2>
+                <h3 className="text-block-text">
                     At Campus Connect, we do more than just connect you with tenants—we ensure your 
                     property is in good hands while you enjoy a truly low-touch landlord experience.
                 </h3>
             </div>
-            <div className="l-block3-wrapper">
-                <div className="l-block3-content-wrapper">
+            <div className="image-block full-page-block">
+                <div className="image-block-content-wrapper l-image-block-content-wrapper">
                     <div className="l-block3-title-wrapper">
-                        <h2 className="l-block3-title">Our Comprehensive Tenant Vetting Process</h2>
-                        <h4 className="l-block3-title-text">
+                        <h2 className="image-block-title">Our Comprehensive Tenant Vetting Process</h2>
+                        <h4 className="l-image-block-subtitle">
                             We rigorously screen every applicant to ensure they're a perfect fit for 
                             your property, saving you time, money, and headaches:
                         </h4>
                     </div>
-                    <div className="l-block3-card">
-                        <FontAwesomeIcon icon={faCircleCheck} className="l-check-icon" size='xl' />
-                        <div className="l-block3-text-wrapper">
-                            <h3 className="l-block3-subtitle">In-Depth Interviews:</h3>
-                            <h4 className="l-block3-text">Uncover tenants' true suitability.</h4>
+                    <div className="image-block-card">
+                        <FontAwesomeIcon icon={faCircleCheck} className="image-block-check-icon" size='xl' />
+                        <div className="image-block-text-wrapper">
+                            <h3 className="image-block-subtitle">In-Depth Interviews:</h3>
+                            <h4 className="image-block-text">Uncover tenants' true suitability.</h4>
                         </div>
                     </div>
-                    <div className="l-block3-card">
-                        <FontAwesomeIcon icon={faCircleCheck} className="l-check-icon" size='xl' />
-                        <div className="l-block3-text-wrapper">
-                            <h3 className="l-block3-subtitle">Social Media Checks: </h3>
-                            <h4 className="l-block3-text">Gain clarity on their habits and lifestyle.</h4>
+                    <div className="image-block-card">
+                        <FontAwesomeIcon icon={faCircleCheck} className="image-block-check-icon" size='xl' />
+                        <div className="image-block-text-wrapper">
+                            <h3 className="image-block-subtitle">Social Media Checks: </h3>
+                            <h4 className="image-block-text">Gain clarity on their habits and lifestyle.</h4>
                         </div>
                     </div>
-                    <div className="l-block3-card">
-                        <FontAwesomeIcon icon={faCircleCheck} className="l-check-icon" size='xl' />
-                        <div className="l-block3-text-wrapper">
-                            <h3 className="l-block3-subtitle">Credit Checks:</h3>
-                            <h4 className="l-block3-text">Confirm financial responsibility to protect your investment.</h4>
+                    <div className="image-block-card">
+                        <FontAwesomeIcon icon={faCircleCheck} className="image-block-check-icon" size='xl' />
+                        <div className="image-block-text-wrapper">
+                            <h3 className="image-block-subtitle">Credit Checks:</h3>
+                            <h4 className="image-block-text">Confirm financial responsibility to protect your investment.</h4>
                         </div>
                     </div>
-                    <div className="l-block3-card">
-                        <FontAwesomeIcon icon={faCircleCheck} className="l-check-icon" size='xl' />
-                        <div className="l-block3-text-wrapper">
-                            <h3 className="l-block3-subtitle">Real References:</h3>
-                            <h4 className="l-block3-text">We dig deeper for authentic insights—not just the names tenants provide.</h4>
+                    <div className="image-block-card">
+                        <FontAwesomeIcon icon={faCircleCheck} className="image-block-check-icon" size='xl' />
+                        <div className="image-block-text-wrapper">
+                            <h3 className="image-block-subtitle">Real References:</h3>
+                            <h4 className="image-block-text">We dig deeper for authentic insights—not just the names tenants provide.</h4>
                         </div>
                     </div>
                 </div>
-                <div className="l-block3-image-wrapper">
-                    <img src={image1} alt="campus building" className="l-block3-image" />
+                <div className="image-block-image-wrapper l-smaller-image-wrapper">
+                    <img src={image1} alt="campus building" className="image-block-image" />
                 </div>
             </div>
             <div className="l-block4-wrapper">
@@ -156,22 +156,22 @@ export default function Landlord () {
                     </div>
                 </div>
             </div>
-            <div className="l-block5-wrapper">
-                <div className="l-block5-content-wrapper">
-                    <h2 className="l-block5-title">Your Partner in Property Management</h2>
-                    <h3 className="l-block5-text">
+            <div className="image-block">
+                <div className="image-block-content-wrapper">
+                    <h2 className="image-block-title">Your Partner in Property Management</h2>
+                    <h3 className="l-image-block-text">
                         At Campus Connect, we're here to simplify your role as a landlord. From handling tenant screenings to 
                         organizing maintenance, we take care of the details so you can enjoy the benefits of property ownership 
                         without the hassle.
                     </h3>
                 </div>
-                <div className="l-block5-image-wrapper">
-                    <img src={image2} alt="students vibing" className="l-block5-image" />
+                <div className="image-block-image-wrapper">
+                    <img src={image2} alt="students vibing" className="image-block-image" />
                 </div>
             </div>
-            <div className="l-block6-wrapper">
-                <h2 className="l-block6-title">Partner with Campus Connect today—stress less, earn more!</h2>
-                <a href="https://zld3ikl4smc.typeform.com/to/sTDJ5Vqd" target="_blank" rel="noopener noreferrer" className="l-block6-a">Contact Us</a>
+            <div className="l-bottom-wrapper">
+                <h2 className="l-bottom-title">Partner with Campus Connect today—stress less, earn more!</h2>
+                <a href="https://zld3ikl4smc.typeform.com/to/sTDJ5Vqd" target="_blank" rel="noopener noreferrer" className="l-bottom-a">Get Started</a>
             </div>
             <div className="footer">
                 <h3 className="footer-text">Contact Us!</h3>

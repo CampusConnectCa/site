@@ -1,9 +1,7 @@
 import { useNavigate } from "react-router-dom";
 import React, { useState, useEffect } from "react";
-import { HashLink as Link } from 'react-router-hash-link';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faInstagram } from '@fortawesome/free-brands-svg-icons';
-import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 import '../styles.css'
 
 // images imported:
@@ -53,34 +51,33 @@ export default function LandingPage () {
                     <button className={`nav-button ${isScrolled ? 'nav-scrolled-button' : ''}`} onClick={navigateLandlord}>find vetted tenants</button>
                 </div>
             </div>
-            <div className="lp-block1-wrapper">
-                <div className="lp-block1-text-wrapper">
-                    <h1 className="lp-block1-text">We find students housing that matches their preferences and connect landlords with fully vetted, trustworthy tenants.</h1>
+            <div className="lp-intro">
+                <div className="lp-intro-text-wrapper">
+                    <h1 className="lp-intro-text">We find students housing that matches their preferences</h1>
+                    <h1 className="lp-intro-text">and</h1>
+                    <h1 className="lp-intro-text">connect landlords with fully vetted, trustworthy tenants.</h1>
                 </div>
-                <div className="lp-block1-button-wrapper">
-                    <button className="lp-block1-cta-1" onClick={navigateStudent}>find your home</button>
-                    <button className="lp-block1-cta-2" onClick={navigateLandlord}>find vetted tenants</button>
+                <div className="lp-intro-cta-wrapper">
+                    <button className="lp-intro-cta" onClick={navigateStudent}>find your home</button>
+                    <button className="lp-intro-cta" onClick={navigateLandlord}>find vetted tenants</button>
                 </div>
-                <Link className="nav-link" smooth to="#lpblock2">
-                    <FontAwesomeIcon icon={faChevronDown} className={`lp-chevron-down-icon' ${isScrolled ? 'lp-chevron-down-icon-scrolled' : ''}`} size='2x' />
-                </Link>
             </div>
-            <div id="lpblock2" className="lp-block2-wrapper">
+            <div className="reviews-wrapper">
                 <div className="review">
-                    <img src={headshot2} alt="headshot" className="lp-headshot" />
-                    <div className="lp-review-content">
-                        <h2 className="lp-review-title">Pira Ebrahimi, Keller Williams</h2>
-                        <p className="lp-review-text">
+                    <img src={headshot2} alt="headshot" className="review-headshot" />
+                    <div className="review-content">
+                        <h2 className="review-title">Pira Ebrahimi, Keller Williams</h2>
+                        <p className="review-text">
                             Working with the Campus Connect team was exceptional. They found and screened two ideal tenants 
                             and guided me through the entire process seamlessly.
                         </p>
                     </div>
                 </div>
                 <div className="review">
-                    <img src={headshot1} alt="headshot" className="lp-headshot" />
-                    <div className="lp-review-content">
-                        <h2 className="lp-review-title">Karima, Australian Exchange Student</h2>
-                        <p className="lp-review-text">
+                    <img src={headshot1} alt="headshot" className="review-headshot" />
+                    <div className="review-content">
+                        <h2 className="review-title">Karima, Australian Exchange Student</h2>
+                        <p className="review-text">
                             Campus Connect really helped find me a new tenant for my place at the Quad. Not only did I have a 
                             lot of people asking about the place, but there was a wide range which fit the description of the 
                             type of person I wanted. The team really helped me feel at ease once my move out date came about. 
@@ -89,10 +86,10 @@ export default function LandingPage () {
                     </div>
                 </div>
                 <div className="review">
-                    <img src={headshot3} alt="headshot" className="lp-headshot" />
-                    <div className="lp-review-content">
-                        <h2 className="lp-review-title">Samantha, Student Athlete</h2>
-                        <p className="lp-review-text">
+                    <img src={headshot3} alt="headshot" className="review-headshot" />
+                    <div className="review-content">
+                        <h2 className="review-title">Samantha, Student Athlete</h2>
+                        <p className="review-text">
                             Heading into my second year, I found myself scrambling to secure housing at the last minute. I was 
                             unsure how to navigate the process, and finding legitamate listings that met my criteria felt impossible. 
                             Campus Connect not only helped me find a comfortable home, but they also made this daunting process less 
@@ -103,36 +100,36 @@ export default function LandingPage () {
                     </div>
                 </div>
             </div>
-            <div className="lp-block3-wrapper">
-                <div className="lp-block3-content-wrapper">
-                    <h2 className="lp-block3-title">Ditch the housing drama.</h2>
-                    <h3 className="lp-block3-text">
+            <div className="image-block">
+                <div className="image-block-content-wrapper">
+                    <h2 className="image-block-title">Ditch the housing drama.</h2>
+                    <h3 className="image-block-text">
                         Campus Connect hooks you up with off-campus spots that match your vibe—budget, location, 
                         lifestyle, all covered. We make sure you're set, so you can focus on crushing college 
                         life without the stress.
                     </h3>
-                    <button className="lp-block3-button" onClick={navigateStudent}>find your home</button>
+                    <button className="image-block-button" onClick={navigateStudent}>find your home</button>
                 </div>
-                <div className="lp-block3-image-wrapper">
-                    <img src={image1} alt="students" className="lp-block3-image" />
+                <div className="image-block-image-wrapper">
+                    <img src={image1} alt="students" className="image-block-image" />
                 </div>
             </div>
-            <div className="lp-block4-wrapper">
-                <div className="lp-block4-image-wrapper">
-                    <img src={image2} alt="housing" className="lp-block4-image" />
-                </div>
-                <div className="lp-block4-content-wrapper">
-                    <h2 className="lp-block4-title">Lease your property with confidence.</h2>
-                    <h3 className="lp-block4-text">
+            <div className="image-block image-block-reverse-display">
+                <div className="image-block-content-wrapper">
+                    <h2 className="image-block-title right-align">Lease your property with confidence.</h2>
+                    <h3 className="image-block-text right-align">
                         Campus Connect delivers fully vetted tenants tailored to your preferences, saves you money 
                         by minimizing risks, and handles maintenance requests. Enjoy a low-touch landlord experience 
                         where we take care of the hassles, and you collect the rent.
                     </h3>
-                    <button className="lp-block4-button" onClick={navigateLandlord}>find vetted tenants</button>
+                    <button className="image-block-button" onClick={navigateLandlord}>find vetted tenants</button>
+                </div>
+                <div className="image-block-image-wrapper">
+                    <img src={image2} alt="housing" className="image-block-image" />
                 </div>
             </div>
-            <div className="lp-block5-wrapper">
-                <h2 className="lp-block4-text">Our new platform is currently in development. Stay tuned.</h2>
+            <div className="text-block-secondary">
+                <h2 className="text-block-title">Our new platform is currently in development. Stay tuned.</h2>
             </div>
             <div className="footer">
                 <h3 className="footer-text">Contact Us!</h3>
