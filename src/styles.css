@@ -93,20 +93,22 @@
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: flex-end;
-    height: 74vh;
+    justify-content: center;
+    height: 60vh;
+    min-height: fit-content;
     width: 100%;
+    padding-top: 20vh;
     background-color: var(--cc-primary);
 }
 
 .lp-intro-text-wrapper {
-    width: 80%;
+    width: 90%;
     margin-bottom: 8vh;
 }
 
 .lp-intro-text {
-    margin: 3vh 0;
-    font-size: 300%;
+    margin: 0;
+    font-size: 270%;
     color: var(--cc-secondary);
 }
 
@@ -114,6 +116,7 @@
     width: 40%;
     min-width: fit-content;
     height: 8%;
+    min-height: fit-content;
     margin-bottom: 4vh;
     display: flex;
     justify-content: space-between;
@@ -205,7 +208,7 @@
 
 .l-intro-title {
     color: var(--cc-secondary);
-    margin: 0;
+    margin: 10vh 0 0 0;
     font-size: 330%;
     width: 70%;
 }
@@ -254,6 +257,7 @@
 
 .full-page-block {
     height: 100vh;
+    padding-bottom: 10vh;
 }
 
 .image-block-reverse-display{
@@ -473,7 +477,7 @@
 .s-card-wrapper {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     height: 60vh;
     min-height: fit-content;
@@ -487,13 +491,14 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
-    height: 40vh;
+    height: 55vh;
     min-height: fit-content;
     width: 19%;
     padding: 1%;
     margin: 1%;
     border-radius: 8px;
     background-color: var(--cc-secondary);
+    overflow: hidden;
 }
 
 .s-card-title-wrapper {
@@ -565,7 +570,9 @@
     flex-direction: column;
     justify-content: space-evenly;
     height: 124vh;
+    min-height: fit-content;
     width: 100%;
+    padding: 10vh 0;
     background-color: var(--cc-primary);
 }
 
@@ -582,19 +589,22 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+    min-height: fit-content;
     width: 80%;
 }
 
 .l-block4-card {
     width: 22vw;
     height: 32vh;
+    min-height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
     margin: 3vh 1vw;
+    overflow: hidden;
 }
 
 .l-block4-number-wrapper {
@@ -699,11 +709,17 @@
     }
 }
 
+@media screen and (max-width: 1100px) {
+    .full-page-block {
+        flex-direction: column;
+    }
+}
+
 @media (max-height: 500px) {
     .lp-intro {
         height: fit-content;
         width: 90%;
-        padding: 12vh 5% 0 5%;
+        padding: 17vh 5% 0 5%;
     }
     .lp-intro-text-wrapper {
         width: 100%;
@@ -860,6 +876,7 @@
     /***************************************************************************************************************************************/
     .s-card-wrapper {
         flex-direction: column;
+        align-items: center;
         width: 90%;
         padding: 0 5% 8vh 5%;
     }
@@ -1104,6 +1121,7 @@
     /***************************************************************************************************************************************/
     .s-card-wrapper {
         flex-direction: column;
+        align-items: center;
         width: 90%;
         padding: 0 5% 8vh 5%;
     }
@@ -1143,6 +1161,7 @@
     /***************************************************************************************************************************************/
     .l-block4-wrapper {
         height: fit-content;
+        align-items: center;
         padding: 8vh 0;
     }
     .l-block4-title {
